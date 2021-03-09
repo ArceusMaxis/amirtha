@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <h3>Welcome! I'm Amirtha Krishnan</h3>
+    <h2 class="text">Web,Game Dev & Designer</h2>
+    <section class="first">
+        <h2 class="innertext">Web,Game Dev & Designer</h2>
+    </section>
+    <div class="container">
+        <h2>THIS SITE IS INTERACTIVE!</h2>
+        <p>This site has intense HTML,CSS and JS wowza, so, get ready to lose ya mind!<br>I have used the best resources i could find, including, but not limited to my brain, google?, stackoverflow, codepen, and yada yada yada... anywaaaaaaaaaaaaays.. If you seriously want to know my pathway to webdev, visit my <a href="resources.html">Resources</a> tab! Gottit? ogay! So, next up,I wanna explain why this website looks like a mish-mash of cool effects and so much gizmo-mania, its because, I wish to demonstrate simple and complex web elements that may help fellow developers get to know that their creativities shall not be challenged by mere frameworks! Whatever you desire! Will it into existence, my amigos.</p>
+    </div>
+    <div id="ballball">
+        <div class="eyes">
+            <div class="eyewhite"><div class="eyeblack"></div>
+            <p></p>
+        </div>
+    </div>
+  </div>
+  
+  <script>
+      let section = document.querySelector('section');
+        let text = document.querySelector('.text');
+        let innertext = document.querySelector('.innertext');
+        window.addEventListener('scroll',function() 
+        {
+    let value = window.scrollY;
+    section.style.clipPath = "circle("+ value +"px at center center)";
+    text.style.left = 100 - value / 5 + '%';
+    innertext.style.left = 100 - value / 5 + '%';
+})
+  </script>
+</body>
+</html>
