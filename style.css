@@ -55,9 +55,9 @@ h3
   background: repeating-linear-gradient(
   45deg,
   #ffe227,
-  #ffe227 10px,
-  #121013 10px,
-  #121013 20px);
+  #ffe227 20px,
+  #121013 20px,
+  #121013 30px);
   color: #ffffff;
 }
 .innertext
